@@ -5,21 +5,19 @@ define('SITE_ROOT', dirname(dirname(__FILE__)));
 define('INC_DOC_ROOT', $_SERVER['DOCUMENT_ROOT']);
 //Website local date time
 date_default_timezone_set('Europe/Athens');
-//Java applet
-define('JAVA_APPS',"config/Java360/");
 //user language
 define('USER_LANG',substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
 define('SITE_NAME','DoSoft');
 define('SITE_HOST',$_SERVER['SERVER_NAME']);
-define('DS_SALT','DOSOFT.INFO_CM');
-define('DS_HEX_SYMMETRIC','c7098adc8d6128b5d4b4f7b2fe7f7f05');
+define('DS_SALT','INFO_CM');
+define('DS_HEX_SYMMETRIC','c7098');
 define("COOKIE_TIME_OUT", 1);
 #define('DOLANG',array('en','fr','el'));
 // Database connectivity setup
 define('DB_PERSISTENCY', 'true');
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'dosoftech');
-define('DB_PASSWORD', 'VXExBCWSKTSbYpP5');
+define('DB_USERNAME', 'dosoft');
+define('DB_PASSWORD', 'VXExBCWSK');
 define('DB_DATABASE','idosoft');
 define('DB_DRIVER','Pdo_Mysql');
 define('VIRTUAL_LOCATION','/');
@@ -46,7 +44,7 @@ define('DEBUGGING', true);
 define('ERROR_TYPES', E_ALL);
 // Settings about mailing the error messages to admin
 define('SEND_ERROR_MAIL', false);
-define('SENDMAIL_FROM', 'clemwm@gmail.com'); #info@dosoft.info
+define('SENDMAIL_FROM', 'cl'); #o
 define('ADMIN_ERROR_MAIL', SENDMAIL_FROM);
 define('RECEIVE_FROM' ,SENDMAIL_FROM);
 define('PHONE_FROM','(0030) 210 86 70 232');
