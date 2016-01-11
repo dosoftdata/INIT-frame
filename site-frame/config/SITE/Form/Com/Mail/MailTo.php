@@ -7,8 +7,8 @@
  * @author		Clement Mukendi <clement.mukendi@outlook.fr>
  * @version		1.3 - 12/16/2015
  */
-namespace Php247\Form\Com\Mail;
-    class MailTo extends \Php247\Form\Com\Mail\AsbtractMail{
+namespace SITE\Form\Com\Mail;
+    class MailTo extends \SITE\Form\Com\Mail\AsbtractMail{
         public   $old_sendmail_from = null,
                  $env_name = '';
 

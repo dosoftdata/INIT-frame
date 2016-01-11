@@ -26,7 +26,7 @@
 //   You should have received a copy of the license with this software;
 //   If not, please contact support @ S y s T u r n .com to receive a copy.
 */
-namespace Php247\Form;
+namespace SITE\Form;
 
 
 class ImageFilter {

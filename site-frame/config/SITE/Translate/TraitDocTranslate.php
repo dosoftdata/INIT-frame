@@ -6,7 +6,7 @@
  * Time: 8:14 PM
  */
 
-namespace Php247\Translate;
+namespace SITE\Translate;
 
 
 trait TraitDocTranslate

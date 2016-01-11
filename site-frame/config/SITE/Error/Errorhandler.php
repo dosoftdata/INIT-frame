@@ -1,5 +1,5 @@
 <?php
-namespace Php247\Error;
+namespace SITE\Error;
 class ErrorHandler{
   // Private constructor to prevent direct creation of object
   private function __construct(){}

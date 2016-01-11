@@ -5,7 +5,7 @@
  * @tutorial:Handle all database activities(CRUD) based on ZF2 database adaptor'  
  */
 
-namespace Php247\Db;
+namespace SITE\Db;
 
 // Class providing generic data access functionality
 

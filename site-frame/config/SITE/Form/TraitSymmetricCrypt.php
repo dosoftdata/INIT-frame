@@ -1,12 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: DoSoft
- * Date: 11/21/2015
- * Time: 11:02 PM
- */
-
-namespace Php247\Form;
+namespace SITE\Form;
 
 trait TraitSymmetricCrypt {
 

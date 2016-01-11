@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: DoSoft
- * Date: 10/25/2015
- * Time: 4:16 PM
- */
 
-namespace Php247\Form;
+namespace SITE\Form;
 
 
 use  Zend\Mail\Transport\Sendmail as MailIt;

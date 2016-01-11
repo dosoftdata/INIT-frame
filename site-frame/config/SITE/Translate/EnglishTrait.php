@@ -1,7 +1,7 @@
 <?php
-namespace Php247\Translate;
+namespace SITE\Translate;
 
-use Php247\Translate\DoSoftLanguagePackAbstract;
+use SITE\Translate\DoSoftLanguagePackAbstract;
 
 /**
  *

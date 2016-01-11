@@ -7,8 +7,8 @@
  * @author		Clement Mukendi <clement.mukendi@outlook.fr>
  * @version		1.3 - 12/16/2015
  */
-namespace Php247\Form\Com\Mail;
-use \Php247\Form\Com\Mail\InterfaceMail as MailFace;
+namespace SITE\Form\Com\Mail;
+use \SITE\Form\Com\Mail\InterfaceMail as MailFace;
 abstract class AsbtractMail implements  MailFace{
     public $recipientlist = [];
     public $subject;

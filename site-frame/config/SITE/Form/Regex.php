@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: DoSoft
- * Date: 10/14/2015
- * Time: 11:34 AM
- */
-namespace Php247\Form;
-use Php247\Translate\TranslateAbstract as arrayKey;
+
+namespace SITE\Form;
+use SITE\Translate\TranslateAbstract as arrayKey;
 
 class Regex extends arrayKey{
     /**/

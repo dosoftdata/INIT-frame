@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by CM.
- * User: DoSoft
- * Date: 8/29/2015
- * Time: 5:32 PM
- */
-namespace Php247\Form;
-use Php247\Db\DatabaseHandler as DbServices,
-    Php247\PdfGen\HTML2PDF as PDF_PLUS_MAIL_TO;
+
+namespace SITE\Form;
+use SITE\Db\DatabaseHandler as DbServices;
+
 class InputHandler extends DbServices{
     #Private constructor to prevent direct creation of object
     /**
@@ -26,14 +21,7 @@ class InputHandler extends DbServices{
         '_put' => 'PUT', '_delete' =>'DELETE',
         '_options' => 'OPTIONS', '_head'  => 'HEAD'
     ];
-    public static function pdfMailTo() {
-        self::$_oPdfWithMail = new PDF_PLUS_MAIL_TO();
-        if( is_object(self::$_oPdfWithMail) ):
-            return self::$_oPdfWithMail;
-        else:
-            return false;
-        endif;
-    }
+   
     public static function sessionSet(){
         if( session_id() == self::$_NULL || !isset($_SESSION)) :
             session_start();

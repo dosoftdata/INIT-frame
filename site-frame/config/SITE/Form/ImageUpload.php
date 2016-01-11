@@ -6,9 +6,9 @@
  * Time: 11:42 PM
  */
 
-namespace Php247\Form;
+namespace SITE\Form;
 
-class ImageUpload extends \Php247\Form\ImageFilter {
+class ImageUpload extends \SITE\Form\ImageFilter {
     /**
      * The directory where we save image files.
      * @var string

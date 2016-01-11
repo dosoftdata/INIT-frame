@@ -8,7 +8,7 @@
  * @version		1.3 - 12/16/2015
  */
 
-namespace Php247\Form\Com\Mail;
+namespace SITE\Form\Com\Mail;
 
 interface  InterfaceMail {
     public function MailTo();
@@ -25,7 +25,7 @@ interface  InterfaceMail {
     #les attachements html
     public function addhtmlattachement($filename,$cid='',$contenttype='') ;
     public function sendmail() ;
-    public  function writeattachement($attachement,$B) ;
+    public function writeattachement($attachement,$B) ;
     public function BodyLineWrap($Value) ;
     public function makebody();
     #Mail Headers Methods

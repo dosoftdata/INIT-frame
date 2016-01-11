@@ -1,5 +1,5 @@
 <?php
-namespace Php247\Translate;
+namespace SITE\Translate;
 /**
  *
  * @author Clement

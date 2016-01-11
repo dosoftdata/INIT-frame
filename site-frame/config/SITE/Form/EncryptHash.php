@@ -6,7 +6,7 @@
  * Time: 3:38 AM
  */
 
-namespace Php247\Form;
+namespace SITE\Form;
 
 class EncryptHash extends \Zend\Crypt\Password\Bcrypt {
 

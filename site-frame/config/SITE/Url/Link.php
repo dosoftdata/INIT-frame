@@ -1,11 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Clement
- * Date: 26/4/2015
- * Time: 2:08 μμ
- */
-namespace Php247\Url;
+
+namespace SITE\Url;
 class Link{
     public static function Build($link, $type = 'http'){
         $base = (($type == 'http' || USE_SSL == 'no') ? 'http://' : 'https://') .
