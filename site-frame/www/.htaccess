@@ -1,11 +1,19 @@
 #SetEnv ZF2_PATH /home/username/zf2lib
 AddType application/x-httpd-php .html
+DirectoryIndex main.html
 RewriteEngine On
-RewriteRule ^\.htaccess$ - [F]
-RewriteCond %{REQUEST_URI} =""
-RewriteRule ^.*$ /www/index.html [NC,L]
-RewriteCond %{REQUEST_URI} !^/www/.*$
-RewriteRule ^(.*)$ /www/$1
-RewriteCond %{REQUEST_FILENAME} -f
+# The following rule tells Apache that if the requested filename
+# exists, simply serve it.
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
-RewriteRule ^www/.*$ /www/main.html [NC,L]
+# The following rewrites all other queries to index.php. The 
+# condition ensures that if you are using Apache aliases to do
+# mass virtual hosting, the base path will be prepended to 
+# allow proper resolution of the index.php file; it will work
+# in non-aliased environments as well, providing a safe, one-size 
+# fits all solution.
+RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+RewriteRule ^(.*) - [E=BASE:%1]
+RewriteRule ^(.*)$ %{ENV:BASE}main.html [NC,L]

@@ -4,11 +4,11 @@ class ErrorHandler{
   // Private constructor to prevent direct creation of object
   private function __construct(){}
   /* Set user error-handler method to ErrorHandler::Handler method */
-  public static function SetHandler( $errTypes = ERROR_TYPES ){
-    return set_error_handler(array ('Php247\Error\ErrorHandler', 'Handler'), $errTypes);
+  static function SetHandler( $errTypes = ERROR_TYPES ){
+    return set_error_handler(array ('SITE\Error\ErrorHandler', 'Handler'), $errTypes);
   }
   #Error handler method
-  public static function Handler($errNo, $errStr, $errFile, $errLine){
+  static function Handler($errNo, $errStr, $errFile, $errLine){
     /* The first two elements of the backtrace array are irrelevant:
         - ErrorHandler.GetBacktrace
         - ErrorHandler.Handler */
@@ -56,7 +56,7 @@ class ErrorHandler{
     }
   }
   #Builds backtrace message
-  public static function GetBacktrace($irrelevantFirstEntries){
+  static function GetBacktrace($irrelevantFirstEntries){
     $s = '';
     $MAXSTRLEN = 64;
     $trace_array = debug_backtrace();
