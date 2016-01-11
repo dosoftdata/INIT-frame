@@ -1,5 +1,5 @@
 #SetEnv ZF2_PATH /home/username/zf2lib
-AddType application/x-httpd-php .html
+AddType application/x-httpd-php .html .tmpl
 RewriteEngine On
 RewriteRule ^\.htaccess$ - [F]
 RewriteCond %{REQUEST_URI} =""
